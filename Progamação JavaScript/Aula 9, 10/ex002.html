@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com Eventos DOM</title>
+    <style> 
+    div#area {background-color: blueviolet; height: 200px; width: 200px; text-align: center; line-height: 200px;}
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com Eventos DOM document object model</h1>
+    <p>Aqui vai o resultado</p>
+    <div id="area"> Clique aqui sdsd</div>
+
+    <script>
+            var a = window.document.getElementById('area');
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.background = 'red'
+        }
+        function entrar() {
+            a.innerText = 'Entrou'
+        }
+        function sair() {
+            a.innerText = 'Saiu'
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
+<!-- 
+Por Marca
+Por ID
+Por Nome
+Por Classe
+Por Seletor 
+-->
+<!-- 
+Arvore DOM 
+            windown
+Location| Document  | History 
+            HTML
+        Head  |  Body
+    meta| title    h1| p| p |div
+                        strong
+-->
